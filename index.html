@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"
+    />
+    <title>出校信息表</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?bc1698e38e6a2b34c854f6d912eff885";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="page-top">
+      <span class="box selected">申请表单</span>
+      <span class="box"></span>
+    </div>
+    <div id="page-method">
+      <span class="logo"><img src="images/img01.png" alt="" /></span>
+      <span class="content">行程管理</span>
+    </div>
+    <div class="page-list">
+      <span class="page-list-title">学生姓名</span>
+      <div class="page-list-content" id="name">张三</div>
+    </div>
+    <div class="page-list">
+      <span class="page-list-title">学号</span>
+      <div class="page-list-content" id="id">1234567890</div>
+    </div>
+    <div class="page-list">
+      <span class="page-list-title">出校时间</span>
+      <div class="page-list-content page-list-strong" id="date">
+        2020-10-13 22:30
+      </div>
+    </div>
+    <div class="page-list">
+      <span class="page-list-title">通行码</span>
+      <div class="page-list-content page-list-image">
+        <div id="qrcode"></div>
+      </div>
+    </div>
+    <div id="hider">
+      <img class="loading" src="images/loading.gif" alt="Loading">
+    </div>
+    <a id="qr-scan" href="http://sao315.com/w/api/saoyisao" hidden></a>
+    <script
+      type="text/javascript"
+      src="javascript/qrcode.min.js"
+    ></script>
+    <script type="text/javascript">
+      var qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: "通过",
+        width: 128,
+        height: 128,
+        colorDark: "rgb(41, 252, 46)",
+        colorLight: "rgba(255, 255, 255, 0)",
+        correctLevel: QRCode.CorrectLevel.H
+      });
+    </script>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>

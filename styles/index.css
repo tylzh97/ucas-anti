@@ -1,0 +1,123 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 665;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+#page-top {
+  height: 42px;
+  line-height: 40px;
+  color: rgb(135, 135, 135);
+  font-weight: 200;
+  background-color: #fff;
+  /* background-color: pink; */
+}
+
+#page-top .box {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  height: 40px;
+  width: 50%;
+}
+
+#page-top .selected {
+  margin: 0 5px;
+  border-bottom: 3px solid #4285f4;
+}
+
+#page-method {
+  background-color: #fff;
+  margin: 10px 10px 10px 10px;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px;
+}
+
+#page-method .logo {
+  float: left;
+}
+
+#page-method .logo img {
+  padding-top: 6px;
+  margin-right: 5px;
+  height: 30px;
+  width: 30px;
+}
+
+#page-method .content {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.page-list {
+  /* background-color: skyblue; */
+}
+
+.page-list .page-list-title {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  color: rgb(135, 135, 135);
+  font-size: 14px;
+  font-family: 微软雅黑;
+  padding-left: 10px;
+  /* background-color: green; */
+}
+
+.page-list .page-list-content {
+  height: 40px;
+  line-height: 40px;
+  padding: 5px;
+  padding-left: 10px;
+  margin: 5px 0;
+  font-size: 14px;
+  font-family: 微软雅黑;
+  background-color: white;
+  color: rgb(101, 101, 101);
+}
+
+.page-list .page-list-strong {
+  color: rgb(80, 80, 80);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#qrcode {
+  display: inline-block;
+  text-align: center;
+}
+
+.page-list .page-list-image {
+  text-align: center;
+  height: 120px;
+  padding: 20px;
+}
+
+#hider {
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  position: fixed;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#hider .loading {
+  width: 30px;
+}
+
+#hider-hidden {
+  display: none;
+}
+
+[class~="sandbox"] {
+  display: none;
+}
